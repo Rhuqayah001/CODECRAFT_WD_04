@@ -13,46 +13,15 @@
 <title>Fashina Rukayat</title>
 </head>
 <body>
-    <!-- <header>
-        <nav class="navbar">
-            <div class="logo">Fashina Rukayat</div>
-
-            <button class="menu-toggle" id="menu-toggle">
-             ☰
-            </button>
-
-            <div>
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-
-                
-                <a href="#" class="btn cta-btn dwd">Download CV</a>
-
-            </ul>
-
-           
-        </nav>
-    </header> -->
-
 
      <header class="navbar">
         <div class="logo">Fashina Rukayat</div>
             
         <nav class="nav-links" id="nav-links">
             <a href="./index2.html">Home</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>  
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>  
             
             <a href="#" class="btn cta-btn">Download CV</a>
         </nav>
@@ -65,7 +34,7 @@
     <!-- HERO SECTION -->
      <section class="hero">
 
-        <div>
+        <div class="hero-img">
             <img src="./my pic.jpg" alt="" width="500px">
         </div>
 
@@ -76,8 +45,11 @@
 
             <p class="hero-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque temporibus, odio deleniti non eum praesentium veniam expedita, est ad at numquam labore, maiores culpa illum repellat omnis magni libero.</p>
 
-            <a href="#" class="btn cta-btn">Hire Me</a>
-            <a href="#" class="btn">Download CV</a>
+            <div class="hero-btn">
+                <a href="#" class="btn cta-btn">Hire Me</a>
+                <a href="#" class="btn btn-outline">Download CV</a>
+            </div>
+            
 
             <div class="social-links">
                 <a href="#"><i class="bi bi-facebook"></i></a>
@@ -87,11 +59,144 @@
                 <a href="#"><i class="bi bi-instagram"></i></a>
 
                 <a href="#"><i class="bi bi-linkedin"></i></a>
-                </div>
+            </div>
 
         </div>
       
      </section>
+
+     <!-- About Me -->
+
+      <section id="about" class="about-section">
+        <div class="about-container">
+           
+           <div class="about-image">
+              <img src="./my pic.jpg" alt="Rukayat Fashina">
+           </div>
+
+           <div class="about-text">
+               <h2>About Me</h2>
+               <p>
+                    I'm <span>Rukayat Fashina</span>, a passionate Frontend Developer and Product Designer with a strong drive to
+                    create visually appealing, responsive, and functional websites.  
+                    My work blends creativity with technical precision, ensuring that each project
+                    not only looks great but also delivers a seamless user experience.
+                </p>
+                <p>
+                    With skills in HTML, CSS, JavaScript, and Figma, I bring ideas to life while
+                    keeping performance and accessibility at the core of my designs.
+                </p>
+
+                <a href="#projects" class="btn btn-about">View My Work</a>
+            </div>
+        </div>
+      </section>
+
+
+      <!-- Project section -->
+       <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="project-title">My Projects</h2>
+                <div class="projects-grid">
+
+                <!-- Project Card -->
+                <div class="project-card">
+                    <img src="project1.jpg" alt="Project Screenshot">
+                    <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>A modern and responsive personal portfolio website built with HTML, CSS, and JavaScript.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/username/project1" target="_blank" class="btn-outline">
+                        <i class="bi bi-github"></i> GitHub
+                        </a>
+                        <a href="https://yourliveprojectlink.com" target="_blank" class="btn">
+                        Live Demo
+                        </a>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Repeat for More Projects -->
+                <div class="project-card">
+                    <img src="project2.jpg" alt="Project Screenshot">
+                    <div class="project-content">
+                    <h3>E-Commerce Store</h3>
+                    <p>A functional store with cart system built using React and Firebase.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/username/project2" target="_blank" class="btn-outline">
+                        <i class="bi bi-github"></i> GitHub
+                        </a>
+                        <a href="https://yourliveprojectlink.com" target="_blank" class="btn">
+                        Live Demo
+                        </a>
+                    </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </section>
+
+
+      <!-- Contact Me -->
+       <section id="contact" class="contact-section">
+        
+        <div class="contact-container">
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.934429278147!2d3.35578397350424!3d6.529966023091279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8dc9f794ac3b%3A0x4635ab63374beb78!2s23%20Coker%20St%2C%20Mushin%2C%20Lagos%20102215%2C%20Lagos!5e0!3m2!1sen!2sng!4v1755264922432!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="contact-form">
+                <h2>Contact Me</h2>
+
+                <form action="#">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" maxlength="40" placeholder="Fash Ruqa" required><br>
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="fashruqa@example.com" required><br>
+
+                    <label for="mesage">Message</label>
+                    <textarea name="message" id="message" rows="5" cols="15" maxlength="100" placeholder="Enter your message" required></textarea><br>
+
+                    <button type="submit" class="btn cta-btn">Submit</button>
+
+                </form>
+             </div>
+        </div>
+       </section>
+
+       <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                <div class="logo">Fashina Rukayat</div>
+                <p>Frontend Developer | Product Designer</p>
+            </div>
+
+            <div class="footer-links">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-socials">
+                <a href="#"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Rukayat Fashina. All Rights Reserved.</p>
+        </div>
+       </footer>
+
 
  
 
